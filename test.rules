@@ -18,7 +18,6 @@ alert tcp any any -> any 80 (msg:"interpark.com access"; content:"GET /"; conten
 alert tcp any any -> any 80 (msg:"danawa.com access"; content:"GET /"; content:"Host: "; content:"danawa.com"; sid:10026; rev:1;)
 alert tcp any any -> any 80 (msg:"jobkorea.co.kr access"; content:"GET /"; content:"Host: "; content:"jobkorea.co.kr"; sid:10027; rev:1;)
 alert tcp any any -> any 80 (msg:"saramin.co.kr access"; content:"GET /"; content:"Host: "; content:"saramin.co.kr"; sid:10028; rev:1;)
-alert tcp any any -> any 80 (msg:"koreaboo.com access"; content:"GET /"; content:"Host: "; content:"koreaboo.com"; sid:10029; rev:1;)
 alert tcp any any -> any 443 (msg:"naver.com access"; flow:to_server, established; content:"naver.com"; sid:10010; rev:1;)
 alert tcp any any -> any 443 (msg:"daum.net access"; flow:to_server, established; content:"daum.net"; sid:10011; rev:1;)
 alert tcp any any -> any 443 (msg:"google.com access"; flow:to_server, established; content:"google.com"; sid:10012; rev:1;)
@@ -38,4 +37,3 @@ alert tcp any any -> any 443 (msg:"interpark.com access"; flow:to_server, establ
 alert tcp any any -> any 443 (msg:"danawa.com access"; flow:to_server, established; content:"danawa.com"; sid:10039; rev:1;)
 alert tcp any any -> any 443 (msg:"jobkorea.co.kr access"; flow:to_server, established; content:"jobkorea.co.kr"; sid:10040; rev:1;)
 alert tcp any any -> any 443 (msg:"saramin.co.kr access"; flow:to_server, established; content:"saramin.co.kr"; sid:10041; rev:1;)
-alert tcp any any -> any 443 (msg:"koreaboo.com access"; flow:to_server, established; content:"koreaboo.com"; sid:10042; rev:1;)
